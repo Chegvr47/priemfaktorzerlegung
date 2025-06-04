@@ -9,7 +9,6 @@ def primfaktorzerlegung(n):
     print(f"Starte Primfaktorzerlegung für {n}...")
     while n > 1:
         current_time = time.time()
-        # Update alle 0.5 Sekunden
         if current_time - last_update >= 0.5:
             progress = (faktor / max_faktor) * 100
             print(f"\rFortschritt: {min(progress, 99.9):.1f}% - Aktueller Faktor: {faktor}", end="")
